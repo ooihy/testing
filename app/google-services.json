@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "101078818844",
+    "firebase_url": "https://ooihytesting.firebaseio.com",
+    "project_id": "ooihytesting",
+    "storage_bucket": "ooihytesting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101078818844:android:8e3803aa83aa126e",
+        "android_client_info": {
+          "package_name": "com.example.ooikk.testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101078818844-8pseb057gvi73cfh71f7slb2ddvm38lu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "101078818844-8pseb057gvi73cfh71f7slb2ddvm38lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsi3loc6y1Tln6NzoG9XLM3asJSOEVoR0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
