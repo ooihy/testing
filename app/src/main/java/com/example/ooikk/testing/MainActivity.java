@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.logout:
                 userLogout();
                 return true;
+            case R.id.chat: //added chat option to be available on menu
+                userChat();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -48,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(MainActivity.this, loginActivity.class);
         startActivity(intent);
+        finish();
+    }
+
+    //guide user to chat room -> Not sure if this works
+    private void userChat() {
+        FirebaseAuth.getInstance().signOut();
+        Intent secondIntent = new Intent(MainActivity.this, ChatActivity.class);
+        startActivity(secondIntent);
         finish();
     }
 
