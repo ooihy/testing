@@ -1,5 +1,8 @@
 package com.example.ooikk.testing;
 
+//This is the main page of the app
+//Users can access the chat or logout
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,18 +31,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) { //specify the options menu for an activity
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
+    //after inflating the menu with the items you might want
+    // to add some action when they are selected:
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.logout:
                 userLogout();
                 return true;
-            case R.id.chat: //added chat option to be available on menu
+            case R.id.Chat: //added chat option to be available on menu
                 userChat();
                 return true;
         }

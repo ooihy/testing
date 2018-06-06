@@ -1,5 +1,7 @@
 package com.example.ooikk.testing;
 
+//This is the sign up page. Upon completing sign_up, users will be directed to main page
+
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +30,12 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     public static final int GET_FROM_GALLERY = 3;
 
+    String fullName;
+    String userName;
+    String phoneNum;
+    String email;
+    String password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,11 +55,11 @@ public class SignupActivity extends AppCompatActivity {
         mBtnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fullName = mEditTextName.getText().toString().trim(); //get from textbox
-                String username = mEditTextUsername.getText().toString().trim(); //get from textbox
-                String phoneNum = mEditTextPhone.getText().toString().trim(); //get from textbox
-                String email = mEditTextEmail.getText().toString().trim(); //get from textbox
-                String password = mEditTextPw.getText().toString().trim(); //get from textbox
+                fullName = mEditTextName.getText().toString().trim(); //get from textbox
+                userName = mEditTextUsername.getText().toString().trim(); //get from textbox
+                phoneNum = mEditTextPhone.getText().toString().trim(); //get from textbox
+                email = mEditTextEmail.getText().toString().trim(); //get from textbox
+                password = mEditTextPw.getText().toString().trim(); //get from textbox
                 // Check if email is empty
                 if (TextUtils.isEmpty(email)) {
                     Toast.makeText(SignupActivity.this, "Enter Email Address", Toast.LENGTH_SHORT).show();

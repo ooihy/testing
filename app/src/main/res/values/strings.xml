@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">testing</string>
+    <string name="user_id">User ID</string>
+    <string name="user_nickname">User Nickname</string>
+    <string name="log_in">Log in</string>
+    <string name="logout">Logout</string>
 </resources>
